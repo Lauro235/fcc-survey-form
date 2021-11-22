@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Free Code Camp Survey Project</title>
+</head>
+<body>
+
+  <main class="lrg-container">
+  
+    <div class="container">
+      <header class="header center">
+          <h1 tabindex="0" id="title">Energy Supply Survey</h1>
+          <p id="description">A chance for you to tell your story.</p>
+      </header>
+    </div>
+    
+    <form id="survey-form">
+        <fieldset id="section-1" class="container grid grid--1">
+          <legend class="center">About you</legend>
+          <div class="flex">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" class="center" name="name" type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="flex">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" class="center" name="email" type="email" placeholder="Enter your email" required>
+          </div>
+          <div class="flex">
+            <label id="number-label" for="number">Age</label>
+            <input id="number" class="center" name="number" type="number" min="10" max="100" placeholder="Enter your age" required>
+          </div>  
+        </fieldset>
+  
+  
+        <fieldset id="section-2" class="container grid grid--2">
+          <legend class="center">Your current energy suppliers<span class="clue"> (If your supplier isn't included please type your supplier in)</span></legend>
+          <div class="flex flex--between">
+            <label for="e-provider">Select your electricity supplier</label>
+            <input id="e-provider" class="center" type="text" list="e-providers" placeholder="Type current supplier" aria-label="" required>
+            <datalist id="e-providers">
+              <option value="">Type current supplier</option>
+              <option value="Affect Energy">Affect Energy</option>
+              <option value="Avro Energy">Avro Energy</option>
+              <option value="Boost">Boost</option>
+              <option value="Bristol Energy">Bristol Energy</option>
+              <option value="British Gas">British Gas</option>
+              <option value="British Gas Evolve">British Gas Evolve</option>
+              <option value="Bulb">Bulb</option>
+              <option value="Co-operative Energy">Co-operative Energy</option>
+              <option value="E">E</option>
+              <option value="E.ON">E.ON</option>
+              <option value="E.ON Next">E.ON Next</option>
+              <option value="EDF Energy">EDF Energy</option>
+              <option value="ESB Energy">ESB Energy</option>
+              <option value="Ebico Living">Ebico Living</option>
+              <option value="Ecotricity">Ecotricity</option>
+              <option value="Engie">Engie</option>
+              <option value="Enstroga">Enstroga</option>
+              <option value="Entice Energy">Entice Energy</option>
+              <option value="Eversmart Energy">Eversmart Energy</option>
+              <option value="Flow Energy">Flow Energy</option>
+              <option value="Fosse Energy">Fosse Energy</option>
+              <option value="GB Energy Supply">GB Energy Supply</option>
+              <option value="GEUK">GEUK</option>
+              <option value="GOTO Energy">GOTO Energy</option>
+              <option value="Go Effortless Energy">Go Effortless Energy</option>
+              <option value="Good Energy">Good Energy</option>
+              <option value="Great North Energy">Great North Energy</option>
+              <option value="Green">Green</option>
+              <option value="Green Network Energy">Green Network Energy</option>
+              <option value="HomeShift">HomeShift</option>
+              <option value="Hub Energy">Hub Energy</option>
+              <option value="Igloo Energy">Igloo Energy</option>
+              <option value="LECCY">LECCY</option>
+              <option value="Logicor Energy">Logicor Energy</option>
+              <option value="London Power">London Power</option>
+              <option value="M&amp;S Energy">M&amp;S Energy</option>
+              <option value="MoneyPlus Energy">MoneyPlus Energy</option>
+              <option value="Nabuh Energy">Nabuh Energy</option>
+              <option value="Neon Reef">Neon Reef</option>
+              <option value="Northumbria Energy">Northumbria Energy</option>
+              <option value="npower">npower</option>
+              <option value="npower Select">npower Select</option>
+              <option value="OVO Energy">OVO Energy</option>
+              <option value="Octopus Energy">Octopus Energy</option>
+              <option value="Omni Energy">Omni Energy</option>
+              <option value="Orbit Energy">Orbit Energy</option>
+              <option value="Our Power">Our Power</option>
+              <option value="Outfox the Market">Outfox the Market</option>
+              <option value="PFP Energy">PFP Energy</option>
+              <option value="Powershop">Powershop</option>
+              <option value="Pure Planet">Pure Planet</option>
+              <option value="RAM Energy">RAM Energy</option>
+              <option value="Roar Power">Roar Power</option>
+              <option value="Robin Hood Energy">Robin Hood Energy</option>
+              <option value="SSE">SSE</option>
+              <option value="SSE Atlantic">SSE Atlantic</option>
+              <option value="SSE Scottish Hydro">SSE Scottish Hydro</option>
+              <option value="SSE Southern Electric">SSE Southern Electric</option>
+              <option value="SSE Swalec">SSE Swalec</option>
+              <option value="Sainsbury's Energy">Sainsbury's Energy</option>
+              <option value="ScottishPower">ScottishPower</option>
+              <option value="Shell Energy">Shell Energy</option>
+              <option value="So Energy">So Energy</option>
+              <option value="Southend Energy">Southend Energy</option>
+              <option value="Spark Energy">Spark Energy</option>
+              <option value="Square1 Energy">Square1 Energy</option>
+              <option value="Symbio Energy">Symbio Energy</option>
+              <option value="The People's Energy Company">The People's Energy Company</option>
+              <option value="Together Energy">Together Energy</option>
+              <option value="Twenty Energy">Twenty Energy</option>
+              <option value="Utilita">Utilita</option>
+              <option value="Utility Point">Utility Point</option>
+              <option value="Utility Warehouse">Utility Warehouse</option>
+              <option value="Wasps Energy">Wasps Energy</option>
+              <option value="White Rose Energy">White Rose Energy</option>
+              <option value="Wigan Warriors Energy">Wigan Warriors Energy</option>
+              <option value="Yorkshire Energy">Yorkshire Energy</option>
+              <option value="Your Energy Sussex">Your Energy Sussex</option>
+              <option value="Zebra Power">Zebra Power</option>
+            </datalist>
+          </div>
+  
+          <div class="flex flex--between">
+            <label for="g-provider">Select your gas supplier</label>
+            <input id="g-provider" class="center" type="text" list="g-providers" placeholder="Type current supplier" required>
+            <datalist id="g-providers">
+            <option value="">Select Your Current Gas Supplier</option>
+            <option value="Angelic Energy">Angelic Energy</option>
+            <option value="Avro Energy">Avro Energy</option>
+            <option value="Better Energy">Better Energy</option>
+            <option value="Bristol Energy">Bristol Energy</option>
+            <option value="British Gas">British Gas</option>
+            <option value="British Gas Evolve">British Gas Evolve</option>
+            <option value="Bulb">Bulb</option>
+            <option value="Co-operative Energy">Co-operative Energy</option>
+            <option value="Daligas">Daligas</option>
+            <option value="E">E</option>
+            <option value="E.ON">E.ON</option>
+            <option value="E.ON Next">E.ON Next</option>
+            <option value="EBICo">EBICo</option>
+            <option value="EDF Energy">EDF Energy</option>
+            <option value="ESB Energy">ESB Energy</option>
+            <option value="Ebico Living">Ebico Living</option>
+            <option value="Ecotricity">Ecotricity</option>
+            <option value="Engie">Engie</option>
+            <option value="Enstroga">Enstroga</option>
+            <option value="Entice Energy">Entice Energy</option>
+            <option value="Fischer Energy">Fischer Energy</option>
+            <option value="Flow Energy">Flow Energy</option>
+            <option value="Go Effortless Energy">Go Effortless Energy</option>
+            <option value="Good Energy">Good Energy</option>
+            <option value="Great North Energy">Great North Energy</option>
+            <option value="HomeShift">HomeShift</option>
+            <option value="Hub Energy">Hub Energy</option>
+            <option value="Igloo Energy">Igloo Energy</option>
+            <option value="LECCY">LECCY</option>
+            <option value="National Gas">National Gas</option>
+            <option value="Northumbria Energy">Northumbria Energy</option>
+            <option value="npower">npower</option>
+            <option value="npower Select">npower Select</option>
+            <option value="OVO Energy">OVO Energy</option>
+            <option value="Omni Energy">Omni Energy</option>
+            <option value="Outfox the Market">Outfox the Market</option>
+            <option value="PFP Energy">PFP Energy</option>
+            <option value="Powershop">Powershop</option>
+            <option value="Pure Planet">Pure Planet</option>
+            <option value="RAM Energy">RAM Energy</option>
+            <option value="Roar Power">Roar Power</option>
+            <option value="Robin Hood Energy">Robin Hood Energy</option>
+            <option value="SSE">SSE</option>
+            <option value="SSE Atlantic">SSE Atlantic</option>
+            <option value="SSE Scottish Hydro">SSE Scottish Hydro</option>
+            <option value="SSE Southern Electric">SSE Southern Electric</option>
+            <option value="SSE Swalec">SSE Swalec</option>
+            <option value="Sainsbury's Energy">Sainsbury's Energy</option>
+            <option value="ScottishPower">ScottishPower</option>
+            <option value="Shell Energy">Shell Energy</option>
+            <option value="So Energy">So Energy</option>
+            <option value="Southend Energy">Southend Energy</option>
+            <option value="Spark Energy">Spark Energy</option>
+            <option value="Square1 Energy">Square1 Energy</option>
+            <option value="Utilita">Utilita</option>
+            <option value="Utility Point">Utility Point</option>
+            <option value="Utility Warehouse">Utility Warehouse</option>
+            <option value="White Rose Energy">White Rose Energy</option>
+            <option value="Your Energy Sussex">Your Energy Sussex</option>
+            <option value="Zog Energy">Zog Energy</option>
+                    </datalist>
+        </div>
+        </fieldset>
+        
+        <fieldset id="section-3" class="container">
+          <legend class="center">Buyer Thought Process</legend>
+          <div class="group radio-container">
+            <p tabindex="0">Are you considering changing your supplier?</p>
+                  <label class="radio-control">
+                    <input
+                      name="change-provider"
+                      value="yes"
+                      type="radio"
+                      class="input-radio"
+                      required
+                    /> Yes</label
+                  >
+            
+                  <label class="radio-control">
+                    <input
+                      name="change-provider"
+                      value="no"
+                      type="radio"
+                      class="input-radio"
+                    /> No</label
+                  >
+            
+                  <label class="radio-control">
+                    <input
+                      name="change-provider"
+                      value="maybe"
+                      type="radio"
+                      class="input-radio"
+                    /> Maybe</label
+                  >
+          </div>
+          
+                <div>
+                  <p tabindex="0" class="center">
+                    What aspects of service are you looking for when deciding on your utility providers?
+                    <span class="clue">(Check all that apply)</span>
+                  </p>
+                  <div id="checkbox" class="flex" aria-required="true">
+                    <label class="checkbox-control">
+                      <input
+                        name="prefer"
+                        value="phone-contact"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Easy to contact by phone</label
+                    >
+                    <label class="checkbox-control">
+                      <input
+                        name="prefer"
+                        value="email-contact"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Prompt email responses</label
+                    >
+                    <label class="checkbox-control">
+                      <input
+                        name="prefer"
+                        value="affordable"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Good value for money</label
+                    >
+                    <label class="checkbox-control">
+                      <input
+                        name="prefer"
+                        value="loyal"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Rewards loyal customers</label
+                    >
+                    <label class="checkbox-control">
+                      <input
+                        name="prefer"
+                        value="vip"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />VIP Treatment and access to other services and goods</label
+                    >
+                    <label class="checkbox-control">
+                      <input
+                        name="prefer"
+                        value="discounts"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Discounts and Offers</label
+                    >
+                    <label class="checkbox-control">
+                      <input
+                        name="prefer"
+                        value="care"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />High quality Customer Care</label
+                    >
+                    <label class="checkbox-control">
+                      <input
+                      name="prefer"
+                      value="legal"
+                      type="checkbox"
+                      class="input-checkbox"
+                    />Fair contract agreement</label>
+                  </div>
+                </div>
+          
+              <div class="flex">
+                <label for="dropdown" class="dropdown-control">Within the energy sector, which areas would you like to see the most investment given?</label>
+                <div class="dropdown-container">
+                  <div class="select">
+                    <select id="dropdown" class="center" name="investment" class="sora" required>
+                        <option disabled selected value>Select sector</option>
+                        <option value="solar">Solar power</option>
+                        <option value="wind">Wind energy</option>
+                        <option value="electric">Electric car efficiency</option>
+                        <option value="insulation">Insulation</option>
+                        <option value="hydro">Hydropower</option>
+                        <option value="fuel">Alternative fuel types</option>
+                        <option value="resource">Resource management</option>
+                        <option value="other">Other</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+                <div class="comments flex">
+                  <label for="comments">If you have any other thoughts, we'd love to hear them!</label>
+                  <div>
+                    <textarea name="further-comments" id="comments" cols="30" rows="10" placeholder="(Type your comments here...)"></textarea>
+                  </div>
+                </div>
+        </fieldset>
+        <button id="submit" type="submit">Submit questionaire</button>
+    </form>
+  </main>
+  </body>
+</html>
